@@ -78,7 +78,26 @@ body::before {
 /* ═══════════════════════════════════════════════
    Header
 ═══════════════════════════════════════════════ */
-header { padding: 48px 0 32px; text-align: center; }
+header { position: relative; padding: 48px 0 32px; text-align: center; }
+
+.author-avatar {
+  position: absolute; top: 48px; right: 0;
+  width: 44px; height: 44px; border-radius: 50%;
+  border: 2px solid var(--border);
+  box-shadow: 0 0 0 3px rgba(129,140,248,0.2);
+  object-fit: cover;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.author-avatar:hover {
+  box-shadow: 0 0 0 4px rgba(129,140,248,0.45);
+  transform: scale(1.06);
+}
+[data-theme="light"] .author-avatar {
+  box-shadow: 0 0 0 3px rgba(99,102,241,0.2);
+}
+[data-theme="light"] .author-avatar:hover {
+  box-shadow: 0 0 0 4px rgba(99,102,241,0.45);
+}
 
 .badge {
   display: inline-flex; align-items: center; gap: 6px;
