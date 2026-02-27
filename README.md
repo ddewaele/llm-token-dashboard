@@ -2,6 +2,8 @@
 
 An interactive, single-file webapp visualizing the dramatic growth of context window sizes across **OpenAI**, **Anthropic**, and **Google** models — from GPT-3's 2,048 tokens in 2020 to 1 million+ tokens in 2026.
 
+![LLM Token Dashboard screenshot](screenshot.png)
+
 ## Live Demo
 
 Open `index.html` in any modern browser. No build step, no server, no dependencies to install.
